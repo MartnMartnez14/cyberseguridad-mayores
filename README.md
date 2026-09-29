@@ -4,7 +4,7 @@ Sitio educativo, gratuito y accesible para aprender a reconocer estafas, protege
 
 > **Detente → Piensa → Verifica**
 
-![Vista previa de Seguridad Digital](assets/og-image.svg)
+![Vista previa de Seguridad Digital](assets/screenshot.png)
 
 ## Demo
 
