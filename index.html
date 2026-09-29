@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Consejos claros y accesibles para reconocer estafas, proteger cuentas y utilizar Internet con mayor seguridad.">
+  <meta name="theme-color" content="#0b1220">
+  <meta property="og:title" content="Ciberseguridad para Adultos Mayores | Seguridad Digital">
+  <meta property="og:description" content="Aprende a reconocer estafas y a proteger tus cuentas con consejos sencillos.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/og-image.svg">
+  <title>Ciberseguridad para Adultos Mayores | Seguridad Digital</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/accessibility.css">
+  <script src="js/app.js" defer></script>
+  <script src="js/scam-checker.js" defer></script>
+  <script src="js/quiz.js" defer></script>
+  <script src="js/graph.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="#inicio" aria-label="Seguridad Digital, ir al inicio">
+        <span class="brand-mark" aria-hidden="true">SD</span>
+        <span>Seguridad Digital</span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav"><span aria-hidden="true">☰</span> Menú</button>
+      <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+        <a href="#senales">Reconocer estafas</a>
+        <a href="#proteccion">Protegerme</a>
+        <a href="#practica">Practicar</a>
+        <a href="#fuentes">Fuentes</a>
+      </nav>
+    </div>
+    <div class="accessibility-bar" aria-label="Controles de accesibilidad">
+      <div class="container access-controls">
+        <span class="control-label">Tamaño del texto:</span>
+        <button type="button" data-font="decrease" aria-label="Disminuir tamaño del texto">A−</button>
+        <button type="button" data-font="reset">A normal</button>
+        <button type="button" data-font="increase" aria-label="Aumentar tamaño del texto">A+</button>
+        <button type="button" id="contrast-toggle" aria-pressed="false">◐ Alto contraste</button>
+        <button type="button" id="clear-preferences">Borrar preferencias</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section id="inicio" class="hero section">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Ciberseguridad clara y sin tecnicismos</p>
+          <h1>Más calma.<br><span class="accent">Menos riesgo.</span></h1>
+          <p class="hero-copy">Consejos sencillos para navegar, comunicarse y utilizar Internet con mayor seguridad. No necesitas ser experto en informática.</p>
+          <ul class="feature-list" aria-label="Qué encontrarás">
+            <li>✓ Consejos claros</li><li>✓ Señales de estafas</li><li>✓ Celular y computadora</li><li>✓ Ayuda ante una sospecha</li>
+          </ul>
+          <div class="button-row">
+            <a class="button primary" href="#detector">Aprender a reconocer una estafa</a>
+            <a class="button secondary" href="#esenciales">Ver los 3 consejos esenciales</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Regla principal de seguridad">
+          <div class="shield" aria-hidden="true">✓</div>
+          <p class="eyebrow">Una regla para recordar</p>
+          <ol class="rule-steps">
+            <li><span>1</span><strong>Detente</strong><small>No respondas de inmediato.</small></li>
+            <li><span>2</span><strong>Piensa</strong><small>¿Te apuran o piden algo privado?</small></li>
+            <li><span>3</span><strong>Verifica</strong><small>Usa otro medio conocido.</small></li>
+          </ol>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section compact" aria-labelledby="tres-segundos-title">
+      <div class="container memory-card">
+        <div><p class="eyebrow">Los 3 segundos de seguridad</p><h2 id="tres-segundos-title">Antes de hacer clic, pregúntate:</h2></div>
+        <ol class="three-questions"><li><b>1</b> ¿Quién me lo envió?</li><li><b>2</b> ¿Qué me está pidiendo?</li><li><b>3</b> ¿Por qué tiene tanta urgencia?</li></ol>
+      </div>
+    </section>
+
+    <section id="esenciales" class="section surface" aria-labelledby="essential-title">
+      <div class="container">
+        <p class="eyebrow">Empieza por aquí</p><h2 id="essential-title">Si solamente recuerdas 3 cosas</h2>
+        <div class="card-grid three">
+          <article class="card"><span class="medal" aria-hidden="true">01</span><h3>Nunca entregues códigos ni contraseñas</h3><p>Un supuesto empleado no necesita tu contraseña ni el código que recibiste para iniciar sesión.</p></article>
+          <article class="card"><span class="medal" aria-hidden="true">02</span><h3>No actúes bajo presión</h3><p>“Ahora mismo”, “última oportunidad” y “su cuenta será bloqueada” buscan impedirte pensar.</p></article>
+          <article class="card"><span class="medal" aria-hidden="true">03</span><h3>Verifica por otro medio</h3><p>Cierra el mensaje. Abre tú mismo la aplicación oficial o llama a un número que ya conozcas.</p></article>
+        </div>
+        <p class="source-note">Fuente: <a href="https://www.ncsc.gov.uk/collection/phishing-scams/spot-scams" target="_blank" rel="noopener noreferrer">NCSC — Cómo reconocer estafas</a></p>
+      </div>
+    </section>
+
+    <section id="detector" class="section" aria-labelledby="checker-title">
+      <div class="container narrow">
+        <p class="eyebrow">Herramienta educativa</p><h2 id="checker-title">¿Este mensaje podría ser una estafa?</h2>
+        <p>Marca lo que observas. Esta herramienta no da un diagnóstico: te ayuda a reconocer señales de alerta.</p>
+        <form id="scam-form" class="checker">
+          <fieldset><legend>1. ¿Te piden actuar inmediatamente?</legend><div class="choice-row"><label><input type="radio" name="q1" value="yes"> Sí</label><label><input type="radio" name="q1" value="no"> No</label><label><input type="radio" name="q1" value="unsure"> No estoy seguro</label></div></fieldset>
+          <fieldset><legend>2. ¿Te solicitan dinero, una contraseña o un código?</legend><div class="choice-row"><label><input type="radio" name="q2" value="yes"> Sí</label><label><input type="radio" name="q2" value="no"> No</label><label><input type="radio" name="q2" value="unsure"> No estoy seguro</label></div></fieldset>
+          <fieldset><legend>3. ¿Te piden instalar un programa o abrir un enlace?</legend><div class="choice-row"><label><input type="radio" name="q3" value="yes"> Sí</label><label><input type="radio" name="q3" value="no"> No</label><label><input type="radio" name="q3" value="unsure"> No estoy seguro</label></div></fieldset>
+          <fieldset><legend>4. ¿Es un premio, problema o familiar inesperado?</legend><div class="choice-row"><label><input type="radio" name="q4" value="yes"> Sí</label><label><input type="radio" name="q4" value="no"> No</label><label><input type="radio" name="q4" value="unsure"> No estoy seguro</label></div></fieldset>
+          <fieldset><legend>5. ¿Te piden mantenerlo en secreto?</legend><div class="choice-row"><label><input type="radio" name="q5" value="yes"> Sí</label><label><input type="radio" name="q5" value="no"> No</label><label><input type="radio" name="q5" value="unsure"> No estoy seguro</label></div></fieldset>
+          <button class="button primary" type="submit">Revisar señales</button>
+        </form>
+        <div id="scam-result" class="result" aria-live="polite" tabindex="-1"><noscript><p>Sin JavaScript, aplica esta regla: si te piden dinero, códigos o actuar con urgencia, detente y verifica por un canal oficial.</p></noscript></div>
+      </div>
+    </section>
+
+    <section id="senales" class="section surface" aria-labelledby="traffic-title">
+      <div class="container">
+        <p class="eyebrow">Una guía rápida</p><h2 id="traffic-title">Semáforo de seguridad</h2>
+        <div class="traffic-grid">
+          <article class="traffic green"><span aria-hidden="true"></span><h3>Verde — situación normal</h3><p>Entraste tú mismo a la aplicación oficial usando tu acceso habitual.</p></article>
+          <article class="traffic yellow"><span aria-hidden="true"></span><h3>Amarillo — detente y verifica</h3><p>Recibiste un mensaje inesperado que solicita información o genera urgencia.</p></article>
+          <article class="traffic red"><span aria-hidden="true"></span><h3>Rojo — no continúes</h3><p>Te piden un código, contraseña, transferencia, tarjetas regalo o acceso remoto.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="scams-title">
+      <div class="container">
+        <p class="eyebrow">Conoce las formas más comunes</p><h2 id="scams-title">Estafas que pueden parecer reales</h2>
+        <p>Las estafas modernas están preparadas para engañar a cualquier persona. Abre cada tema para conocer sus señales.</p>
+        <div class="accordion-grid searchable" id="scam-cards">
+          <details><summary>📧 Phishing, smishing y vishing</summary><p><strong>Qué es:</strong> un correo, SMS o llamada que suplanta a alguien confiable.</p><p><strong>Señales:</strong> urgencia, amenaza, enlace inesperado o pedido de datos.</p><p><strong>Qué hacer:</strong> corta el contacto y busca tú mismo el canal oficial.</p></details>
+          <details><summary>💬 WhatsApp y familiar falso</summary><p><strong>Cómo funciona:</strong> alguien dice haber cambiado de número o tener una emergencia.</p><p><strong>Señales:</strong> pide dinero rápidamente y evita una llamada.</p><p><strong>Qué hacer:</strong> llama al contacto anterior o a otro familiar.</p></details>
+          <details><summary>🏦 Falso banco</summary><p><strong>Cómo funciona:</strong> una persona afirma que debe “proteger” tu cuenta.</p><p><strong>Señales:</strong> solicita códigos, contraseña, transferencias o instalar una app.</p><p><strong>Qué hacer:</strong> cuelga y llama al número oficial que figura en tu tarjeta o sitio oficial.</p></details>
+          <details><summary>🖥️ Soporte técnico falso</summary><p><strong>Cómo funciona:</strong> dicen que tu equipo tiene un virus y piden control remoto.</p><p><strong>Señales:</strong> contacto inesperado, alarma y pedido de instalar programas.</p><p><strong>Qué hacer:</strong> no instales nada ni permitas acceso.</p></details>
+          <details><summary>🎁 Premio o compra falsa</summary><p><strong>Cómo funciona:</strong> prometen un premio o una oferta extraordinaria.</p><p><strong>Señales:</strong> debes pagar para recibirlo o entregar datos bancarios.</p><p><strong>Qué hacer:</strong> no pagues y consulta el sitio oficial por tu cuenta.</p></details>
+          <details><summary>📈 Inversión falsa</summary><p><strong>Cómo funciona:</strong> prometen ganancias rápidas o “sin riesgo”.</p><p><strong>Señales:</strong> presión, secretos, transferencia a desconocidos o criptomonedas.</p><p><strong>Qué hacer:</strong> no envíes dinero y busca asesoramiento independiente.</p></details>
+          <details><summary>❤️ Estafa romántica</summary><p><strong>Cómo funciona:</strong> una persona construye confianza y luego inventa una emergencia.</p><p><strong>Señales:</strong> evita verse, pide dinero o propone inversiones.</p><p><strong>Qué hacer:</strong> habla con alguien de confianza y no envíes dinero.</p></details>
+          <details><summary>🤖 Fraudes con inteligencia artificial</summary><p><strong>Qué son:</strong> voces, imágenes o videos artificiales que imitan a personas reales.</p><p><strong>Señales:</strong> contacto inesperado y solicitud urgente de dinero.</p><p><strong>Qué hacer:</strong> corta y contacta a la persona mediante otro canal.</p></details>
+        </div>
+        <p class="source-note">Fuentes: <a href="https://www.cisa.gov/secure-our-world" target="_blank" rel="noopener noreferrer">CISA</a>, <a href="https://www.ncsc.gov.uk/collection/phishing-scams" target="_blank" rel="noopener noreferrer">NCSC</a> e <a href="https://www.interpol.int/Crimes/Financial-crime/Social-engineering-scams" target="_blank" rel="noopener noreferrer">INTERPOL</a>.</p>
+      </div>
+    </section>
+
+    <section id="proteccion" class="section surface" aria-labelledby="protect-title">
+      <div class="container">
+        <p class="eyebrow">Capas de protección</p><h2 id="protect-title">Pequeños hábitos que protegen mucho</h2>
+        <div class="protection-grid searchable">
+          <article class="icon-card"><span aria-hidden="true">••••</span><h3>Contraseñas diferentes</h3><p>Usa una contraseña única para cada cuenta importante. Un gestor de contraseñas confiable puede ayudarte.</p></article>
+          <article class="icon-card"><span aria-hidden="true">2×</span><h3>Segundo factor</h3><p>La contraseña es una llave. El segundo factor es una segunda cerradura. Nunca compartas sus códigos.</p></article>
+          <article class="icon-card"><span aria-hidden="true">↻</span><h3>Actualizaciones</h3><p>Actualiza el celular, la computadora, las aplicaciones y el navegador desde sus opciones oficiales.</p></article>
+          <article class="icon-card"><span aria-hidden="true">▣</span><h3>Copias de seguridad</h3><p>Guarda una copia de fotos y documentos importantes en otro lugar confiable.</p></article>
+        </div>
+        <div class="device-grid searchable">
+          <article><h3>📱 Mantén tu celular protegido</h3><ul><li>Usa bloqueo de pantalla.</li><li>Descarga apps desde tiendas oficiales.</li><li>Revisa permisos y elimina apps desconocidas.</li><li>Configura recuperación y localización.</li></ul></article>
+          <article><h3>💻 Mantén tu computadora protegida</h3><ul><li>Mantén sistema y navegador actualizados.</li><li>Evita software pirateado.</li><li>No abras adjuntos inesperados.</li><li>Bloquea la sesión cuando te alejes.</li></ul></article>
+          <article><h3>👥 Redes sociales y privacidad</h3><ul><li>Revisa quién puede ver tus publicaciones.</li><li>No publiques rutinas ni ubicaciones en tiempo real.</li><li>Desconfía de cuentas nuevas o duplicadas.</li><li>Lo publicado puede dar pistas a un estafador.</li></ul></article>
+          <article><h3>👪 Verificación familiar</h3><ul><li>Acuerden un procedimiento para emergencias.</li><li>Pueden usar una palabra familiar que no sea una contraseña.</li><li>No la escribas en esta página.</li><li>Siempre verifica además por otro canal.</li></ul></article>
+        </div>
+        <p class="source-note">Fuente: <a href="https://www.cisa.gov/secure-our-world" target="_blank" rel="noopener noreferrer">CISA — Secure Our World</a>.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="ai-title">
+      <div class="container split">
+        <div><p class="eyebrow">Voces, imágenes y videos falsos</p><h2 id="ai-title">Escuchar o ver ya no siempre significa que sea real</h2><p>La inteligencia artificial puede imitar una voz o crear una imagen convincente. Si alguien conocido pide dinero mediante una llamada o audio inesperado, corta la comunicación y contáctalo tú mismo.</p><div class="callout"><strong>Una pregunta familiar puede ayudar,</strong> pero no debe reemplazar la verificación por otro canal ni convertirse en una contraseña reutilizada.</div></div>
+        <div class="flow" aria-label="Cómo funciona una estafa"><h3>Cómo funciona una estafa</h3><ol><li>Contacto inesperado</li><li>Generar confianza</li><li>Crear urgencia</li><li>Solicitar una acción</li><li>Obtener dinero o información</li></ol></div>
+      </div>
+    </section>
+
+    <section id="practica" class="section surface" aria-labelledby="practice-title">
+      <div class="container"><p class="eyebrow">Practicar ayuda a reconocer señales</p><h2 id="practice-title">¿Qué harías?</h2>
+        <div class="scenario card">
+          <p class="message">“Hola mamá, cambié de número. Tuve un problema y necesito que me transfieras dinero urgentemente.”</p>
+          <fieldset><legend>Elige una respuesta:</legend><div class="scenario-options"><button type="button" data-answer="unsafe">Transferir inmediatamente</button><button type="button" data-answer="unsafe">Seguir preguntando por WhatsApp</button><button type="button" data-answer="safe">Llamar al número anterior para verificar</button></div></fieldset>
+          <p class="scenario-feedback" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="phishing-title">
+      <div class="container split">
+        <div><p class="eyebrow">Simulador educativo</p><h2 id="phishing-title">Mira las señales de un correo falso</h2><p>Este ejemplo es completamente ficticio. No contiene enlaces reales.</p><button id="reveal-phishing" class="button secondary" type="button" aria-expanded="false">Mostrar señales de alerta</button></div>
+        <article class="fake-email" id="fake-email"><div class="email-head"><strong>Banco Seguridad</strong><span>seguridad@banco-verifica.example</span></div><p>Detectamos actividad sospechosa.</p><p class="email-urgent">Su cuenta será bloqueada en 30 minutos.</p><button type="button" disabled>VERIFICAR CUENTA</button><ul class="email-flags" aria-live="polite"><li>🚩 Usa una amenaza y crea urgencia.</li><li>🚩 El dominio no es el sitio oficial del banco.</li><li>🚩 Incluye un botón inesperado.</li><li>🚩 Solicita actuar sin verificar.</li></ul></article>
+      </div>
+    </section>
+
+    <section class="section surface" aria-labelledby="map-title">
+      <div class="container"><p class="eyebrow">Mapa conceptual</p><h2 id="map-title">La seguridad digital está conectada</h2><p>Selecciona un concepto para ver una explicación. También puedes recorrer los nodos con el teclado.</p>
+        <div class="graph-layout"><div id="security-graph" class="graph" role="group" aria-label="Mapa interactivo de seguridad digital"></div><aside id="graph-info" class="graph-info" aria-live="polite"><h3>Seguridad Digital</h3><p>Hábitos sencillos que ayudan a proteger tus cuentas, dispositivos e información.</p></aside></div>
+        <details class="simple-list"><summary>Ver como lista sencilla</summary><ul id="graph-list"><li><strong>Contraseñas:</strong> únicas y guardadas de forma segura.</li><li><strong>Phishing:</strong> mensajes falsos y enlaces inesperados.</li><li><strong>WhatsApp:</strong> códigos y familiares falsos.</li><li><strong>Bancos:</strong> usa siempre canales oficiales.</li><li><strong>Celular:</strong> bloqueo, tiendas oficiales y actualizaciones.</li><li><strong>Privacidad:</strong> limita las pistas públicas.</li><li><strong>2FA:</strong> una segunda comprobación.</li><li><strong>IA:</strong> voces e imágenes pueden imitar a alguien.</li><li><strong>Ayuda:</strong> pedir apoyo reduce el riesgo.</li></ul></details>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="search-title">
+      <div class="container narrow"><p class="eyebrow">Encuentra un tema</p><h2 id="search-title">Buscar en esta guía</h2><label for="site-search">Escribe, por ejemplo: WhatsApp, banco, contraseña, premio o llamada.</label><div class="search-box"><input id="site-search" type="search" autocomplete="off"><button type="button" id="clear-search">Limpiar</button></div><p id="search-status" aria-live="polite"></p><div id="search-results" class="search-results"></div></div>
+    </section>
+
+    <section class="section surface" aria-labelledby="quiz-title">
+      <div class="container narrow"><p class="eyebrow">Pon a prueba tus conocimientos</p><h2 id="quiz-title">Practica a tu ritmo</h2><p>No es un examen. Cada respuesta incluye una explicación y puedes volver a intentarlo.</p><div id="quiz" class="quiz"></div><noscript><p>El cuestionario interactivo necesita JavaScript. Puedes aprender las mismas recomendaciones en las secciones anteriores.</p></noscript></div>
+    </section>
+
+    <section class="section" aria-labelledby="glossary-title">
+      <div class="container"><p class="eyebrow">Diccionario digital sencillo</p><h2 id="glossary-title">Palabras que puedes encontrar</h2><dl class="glossary searchable"><div><dt>Phishing</dt><dd>Mensaje falso que intenta convencerte de entregar información o abrir un enlace.</dd></div><div><dt>Malware</dt><dd>Programa diseñado para causar daño o robar información.</dd></div><div><dt>2FA</dt><dd>Segunda comprobación además de la contraseña.</dd></div><div><dt>VPN</dt><dd>Conexión que puede proteger el tránsito de datos, pero no evita por sí sola estafas ni sitios falsos.</dd></div><div><dt>Cookie</dt><dd>Pequeño dato que un sitio guarda para recordar información o preferencias.</dd></div><div><dt>Ransomware</dt><dd>Programa que bloquea o cifra archivos y exige dinero.</dd></div><div><dt>Deepfake</dt><dd>Imagen, audio o video artificial creado para parecer real.</dd></div></dl></div>
+    </section>
+
+    <section id="ayuda" class="section emergency" aria-labelledby="emergency-title">
+      <div class="container narrow"><p class="eyebrow">Actúa con calma y rapidez</p><h2 id="emergency-title">Me están estafando, ¿qué hago?</h2><ol class="emergency-steps"><li><strong>Detente.</strong> No envíes más información ni dinero.</li><li><strong>Corta el contacto.</strong> No sigas hablando con la persona.</li><li><strong>Protege tus cuentas.</strong> Cambia las credenciales comprometidas desde el sitio oficial.</li><li><strong>Contacta a tu banco.</strong> Hazlo inmediatamente si enviaste dinero.</li><li><strong>Guarda pruebas.</strong> Conserva mensajes, números, comprobantes y capturas.</li><li><strong>Comunica el incidente.</strong> Contacta a las autoridades correspondientes de tu país.</li><li><strong>Pide ayuda.</strong> Habla con una persona de confianza.</li></ol><p class="reassurance">Sentir vergüenza solamente beneficia al estafador. Pedir ayuda rápidamente puede limitar el daño.</p></div>
+    </section>
+
+    <section id="fuentes" class="section surface" aria-labelledby="sources-title">
+      <div class="container split"><div><p class="eyebrow">Información revisada</p><h2 id="sources-title">Fuentes y recursos oficiales</h2><p>Las recomendaciones se sintetizaron en lenguaje sencillo. No usamos estadísticas sin una fuente verificable.</p></div><ul class="resource-list"><li><a href="https://www.cisa.gov/secure-our-world" target="_blank" rel="noopener noreferrer">CISA — Secure Our World <span>↗</span></a></li><li><a href="https://www.ncsc.gov.uk/collection/phishing-scams" target="_blank" rel="noopener noreferrer">NCSC — Phishing scams <span>↗</span></a></li><li><a href="https://www.interpol.int/Crimes/Financial-crime/Social-engineering-scams" target="_blank" rel="noopener noreferrer">INTERPOL — Social engineering scams <span>↗</span></a></li><li><a href="docs/SOURCES.md">Ver trazabilidad completa de fuentes</a></li></ul></div>
+    </section>
+
+    <section id="privacidad" class="section compact"><div class="container privacy"><div><p class="eyebrow">Privacidad</p><h2>Este sitio no necesita saber quién eres</h2><p>No hay cuentas, analítica ni seguimiento. Solo se guardan en tu dispositivo el tamaño de texto, el contraste y si completaste el cuestionario.</p></div><button type="button" id="clear-data" class="button secondary">Borrar datos guardados</button></div></section>
+
+    <section class="section support"><div class="container narrow"><p class="eyebrow">Apoyar el proyecto</p><h2>¿Te gustó el proyecto?</h2><p>Si quieres colaborar voluntariamente, puedes invitarme a un cafecito o mate.</p><div class="support-links"><a href="https://ko-fi.com/martinmartinezgarcia" target="_blank" rel="noopener noreferrer">Ko-fi</a><a href="https://www.paypal.com/paypalme/blufferedtwitch" target="_blank" rel="noopener noreferrer">PayPal</a><a href="https://starlink.com/?referral=RC-DF-5848974-78640-68&amp;app_source=share&amp;utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">Internet satelital Starlink</a></div><small>El enlace de Starlink es de afiliado; puede ofrecerte el primer mes según las condiciones vigentes de Starlink.</small></div></section>
+  </main>
+
+  <button id="help-button" class="floating-help" type="button" aria-expanded="false" aria-controls="help-panel">🚨 ¿Algo te parece sospechoso?</button>
+  <aside id="help-panel" class="help-panel" aria-labelledby="help-panel-title" hidden><button class="close-help" type="button" aria-label="Cerrar ayuda">×</button><h2 id="help-panel-title">Detente y verifica</h2><ol><li>No hagas clic.</li><li>No entregues información.</li><li>No envíes dinero.</li><li>Verifica por otro canal.</li><li>Pide ayuda.</li></ol><a class="button primary" href="#ayuda">Ver todos los pasos</a></aside>
+
+  <footer class="site-footer"><div class="container footer-grid"><div><strong>Seguridad Digital</strong><p>Proyecto educativo y de código abierto.</p></div><nav aria-label="Enlaces del pie"><a href="#fuentes">Fuentes</a><a href="#privacidad">Privacidad</a><a href="#inicio">Accesibilidad</a><a href="LICENSE">Licencia MIT</a><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></nav></div><div class="container footer-note">La información educativa no sustituye la asistencia de tu banco, proveedor o autoridades.</div></footer>
+</body>
+</html>
