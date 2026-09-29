@@ -8,7 +8,7 @@ Sitio educativo, gratuito y accesible para aprender a reconocer estafas, protege
 
 ## Demo
 
-La demo pública estará disponible mediante GitHub Pages después del primer despliegue.
+[Abrir Seguridad Digital](https://martnmartnez14.github.io/cyberseguridad-mayores/)
 
 ## Características
 
