@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Consejos claros y accesibles para reconocer estafas, proteger cuentas y utilizar Internet con mayor seguridad.">
   <meta name="theme-color" content="#0b1220">
+  <meta name="theme-color" content="#f7f9fc" media="(prefers-color-scheme: light)">
   <meta property="og:title" content="Ciberseguridad para Adultos Mayores | Seguridad Digital">
   <meta property="og:description" content="Aprende a reconocer estafas y a proteger tus cuentas con consejos sencillos.">
   <meta property="og:type" content="website">
@@ -41,6 +42,12 @@
         <button type="button" data-font="reset">A normal</button>
         <button type="button" data-font="increase" aria-label="Aumentar tamaño del texto">A+</button>
         <button type="button" id="contrast-toggle" aria-pressed="false">◐ Alto contraste</button>
+        <label class="control-label" for="theme-select">Tema:</label>
+        <select id="theme-select">
+          <option value="auto">Automático</option>
+          <option value="light">Claro</option>
+          <option value="dark">Oscuro</option>
+        </select>
         <button type="button" id="clear-preferences">Borrar preferencias</button>
       </div>
     </div>
@@ -192,7 +199,7 @@
     </section>
 
     <section class="section surface" aria-labelledby="quiz-title">
-      <div class="container narrow"><p class="eyebrow">Pon a prueba tus conocimientos</p><h2 id="quiz-title">Practica a tu ritmo</h2><p>No es un examen. Cada respuesta incluye una explicación y puedes volver a intentarlo.</p><div id="quiz" class="quiz"></div><noscript><p>El cuestionario interactivo necesita JavaScript. Puedes aprender las mismas recomendaciones en las secciones anteriores.</p></noscript></div>
+      <div class="container narrow"><p class="eyebrow">Pon a prueba tus conocimientos</p><h2 id="quiz-title">Practica a tu ritmo</h2><p>No es un examen. Cada respuesta incluye una explicación y puedes volver a intentarlo.</p><div id="quiz" class="quiz" role="region" aria-label="Cuestionario de práctica"></div><noscript><p>El cuestionario interactivo necesita JavaScript. Puedes aprender las mismas recomendaciones en las secciones anteriores.</p></noscript></div>
     </section>
 
     <section class="section" aria-labelledby="glossary-title">
@@ -207,14 +214,25 @@
       <div class="container split"><div><p class="eyebrow">Información revisada</p><h2 id="sources-title">Fuentes y recursos oficiales</h2><p>Las recomendaciones se sintetizaron en lenguaje sencillo. No usamos estadísticas sin una fuente verificable.</p></div><ul class="resource-list"><li><a href="https://www.cisa.gov/secure-our-world" target="_blank" rel="noopener noreferrer">CISA — Secure Our World <span>↗</span></a></li><li><a href="https://www.ncsc.gov.uk/collection/phishing-scams" target="_blank" rel="noopener noreferrer">NCSC — Phishing scams <span>↗</span></a></li><li><a href="https://www.interpol.int/Crimes/Financial-crime/Social-engineering-scams" target="_blank" rel="noopener noreferrer">INTERPOL — Social engineering scams <span>↗</span></a></li><li><a href="docs/SOURCES.md">Ver trazabilidad completa de fuentes</a></li></ul></div>
     </section>
 
-    <section id="privacidad" class="section compact"><div class="container privacy"><div><p class="eyebrow">Privacidad</p><h2>Este sitio no necesita saber quién eres</h2><p>No hay cuentas, analítica ni seguimiento. Solo se guardan en tu dispositivo el tamaño de texto, el contraste y si completaste el cuestionario.</p></div><button type="button" id="clear-data" class="button secondary">Borrar datos guardados</button></div></section>
+    <section id="accesibilidad" class="section compact" aria-labelledby="accesibilidad-title">
+      <div class="container narrow">
+        <p class="eyebrow">Accesibilidad</p>
+        <h2 id="accesibilidad-title">Un sitio pensado para todas las personas</h2>
+        <p>Puedes ampliar el tamaño del texto, activar el alto contraste o elegir entre tema claro, oscuro y automático según tu dispositivo. Todos los controles funcionan con el teclado y muestran un foco visible.</p>
+        <ul class="feature-list" aria-label="Funciones de accesibilidad">
+          <li>✓ Texto ampliable</li><li>✓ Alto contraste</li><li>✓ Tema claro y oscuro</li><li>✓ Navegación por teclado</li><li>✓ Compatible con lectores de pantalla</li><li>✓ Respeta el movimiento reducido</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="privacidad" class="section compact"><div class="container privacy"><div><p class="eyebrow">Privacidad</p><h2>Este sitio no necesita saber quién eres</h2><p>No hay cuentas, analítica ni seguimiento. Solo se guardan en tu dispositivo el tamaño de texto, el contraste, el tema elegido y si completaste el cuestionario.</p></div><button type="button" id="clear-data" class="button secondary">Borrar datos guardados</button></div></section>
 
     <section class="section support"><div class="container narrow"><p class="eyebrow">Apoyar el proyecto</p><h2>¿Te gustó el proyecto?</h2><p>Si quieres colaborar voluntariamente, puedes invitarme a un cafecito o mate.</p><div class="support-links"><a href="https://ko-fi.com/martinmartinezgarcia" target="_blank" rel="noopener noreferrer">Ko-fi</a><a href="https://www.paypal.com/paypalme/blufferedtwitch" target="_blank" rel="noopener noreferrer">PayPal</a><a href="https://starlink.com/?referral=RC-DF-5848974-78640-68&amp;app_source=share&amp;utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">Internet satelital Starlink</a></div><small>El enlace de Starlink es de afiliado; puede ofrecerte el primer mes según las condiciones vigentes de Starlink.</small></div></section>
   </main>
 
   <button id="help-button" class="floating-help" type="button" aria-expanded="false" aria-controls="help-panel">🚨 ¿Algo te parece sospechoso?</button>
-  <aside id="help-panel" class="help-panel" aria-labelledby="help-panel-title" hidden><button class="close-help" type="button" aria-label="Cerrar ayuda">×</button><h2 id="help-panel-title">Detente y verifica</h2><ol><li>No hagas clic.</li><li>No entregues información.</li><li>No envíes dinero.</li><li>Verifica por otro canal.</li><li>Pide ayuda.</li></ol><a class="button primary" href="#ayuda">Ver todos los pasos</a></aside>
+  <aside id="help-panel" class="help-panel" aria-labelledby="help-panel-title" tabindex="-1" hidden><button class="close-help" type="button" aria-label="Cerrar ayuda">×</button><h2 id="help-panel-title">Detente y verifica</h2><ol><li>No hagas clic.</li><li>No entregues información.</li><li>No envíes dinero.</li><li>Verifica por otro canal.</li><li>Pide ayuda.</li></ol><a class="button primary" href="#ayuda">Ver todos los pasos</a></aside>
 
-  <footer class="site-footer"><div class="container footer-grid"><div><strong>Seguridad Digital</strong><p>Proyecto educativo y de código abierto.</p></div><nav aria-label="Enlaces del pie"><a href="#fuentes">Fuentes</a><a href="#privacidad">Privacidad</a><a href="#inicio">Accesibilidad</a><a href="LICENSE">Licencia MIT</a><a href="https://github.com/MartnMartnez14/cyberseguridad-mayores" target="_blank" rel="noopener noreferrer">GitHub</a></nav></div><div class="container footer-note">La información educativa no sustituye la asistencia de tu banco, proveedor o autoridades.</div></footer>
+  <footer class="site-footer"><div class="container footer-grid"><div><strong>Seguridad Digital</strong><p>Proyecto educativo y de código abierto.</p></div><nav aria-label="Enlaces del pie"><a href="#fuentes">Fuentes</a><a href="#privacidad">Privacidad</a><a href="#accesibilidad">Accesibilidad</a><a href="LICENSE">Licencia MIT</a><a href="https://github.com/MartnMartnez14/cyberseguridad-mayores" target="_blank" rel="noopener noreferrer">GitHub</a></nav></div><div class="container footer-note">La información educativa no sustituye la asistencia de tu banco, proveedor o autoridades.</div></footer>
 </body>
 </html>

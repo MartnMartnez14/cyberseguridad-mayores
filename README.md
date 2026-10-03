@@ -20,6 +20,7 @@ Sitio educativo, gratuito y accesible para aprender a reconocer estafas, protege
 - Quiz de ocho situaciones con explicaciones.
 - Buscador local.
 - Controles de tamaño de texto y alto contraste.
+- Tema claro, oscuro y automático según el dispositivo.
 - Panel de ayuda urgente.
 - Sin cuentas, analítica ni recolección de datos personales.
 
@@ -55,7 +56,7 @@ Luego visita `http://localhost:8000`.
 
 ## Accesibilidad
 
-El sitio usa HTML semántico, foco visible, controles grandes, navegación mediante teclado, texto base de 18 px, contraste revisado, alternativa textual del mapa y respeto por `prefers-reduced-motion`. La información esencial permanece disponible si JavaScript falla.
+El sitio usa HTML semántico, foco visible, controles grandes, navegación mediante teclado, texto base de 18 px, contraste revisado, alternativa textual del mapa y respeto por `prefers-reduced-motion`. Incluye tema claro y oscuro (con opción automática), modo de alto contraste y anuncios para lectores de pantalla en el cuestionario. La información esencial permanece disponible si JavaScript falla.
 
 ## Fuentes
 
@@ -63,7 +64,7 @@ Las recomendaciones principales se basan en CISA, NCSC e INTERPOL. Consulta la [
 
 ## Privacidad
 
-No se usan rastreadores, publicidad ni cookies de seguimiento. `localStorage` conserva únicamente las preferencias de accesibilidad y la finalización del quiz. El usuario puede borrar esos datos desde la propia web.
+No se usan rastreadores, publicidad ni cookies de seguimiento. `localStorage` conserva únicamente las preferencias de accesibilidad (tamaño de texto, contraste y tema) y la finalización del quiz. El usuario puede borrar esos datos desde la propia web.
 
 ## Roadmap
 
